@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+dan jika ingin lihat versi yang lebih final ketimbang yang di branch "main", bisa lihat di branch "final"
 
 ## Available Scripts
 
