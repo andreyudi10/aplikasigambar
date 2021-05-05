@@ -45,3 +45,11 @@ img:hover{
     padding: 10px;    
     margin:1px 1px 5px 10px;
 }
+
+.objekfit{
+    object-fit: none;
+}
+
+.teksWidth{
+    width: 200px;
+}

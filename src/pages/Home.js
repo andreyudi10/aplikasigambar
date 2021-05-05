@@ -47,7 +47,8 @@ function Home(props) {
             ]                                         
             setFavourite(objekFavourite)
             // localStorage.setItem("favourite",JSON.stringify(favourite))
-        }else{
+        }
+       if(favourite===[]) {
             const firstFavourite = [
                 {
                     id:id,
@@ -108,10 +109,10 @@ function Home(props) {
     )):
     imageData && imageData.map((array,index)=>(                
         <MDBCard className={styles.card}>
-            <MDBCardImage className="img-fluid" src={array.thumbnailUrl}
+            <MDBCardImage className={`img-fluid ${styles.objekfit}`} src={array.thumbnailUrl}
             waves onClick={handleDetail} id={array.id} fullUrl={array.url}/>
             <MDBCardBody id={array.id} title={array.title} thumbnailUrl={array.thumbnailUrl} fullUrl={array.url}>
-                <MDBCardTitle>{array.title}</MDBCardTitle>                    
+                <MDBCardTitle className={styles.teksWidth}>{array.title}</MDBCardTitle>                    
                 <MDBBtn onClick={handleFavourite} >Favourite</MDBBtn>
             </MDBCardBody>
         </MDBCard>    
