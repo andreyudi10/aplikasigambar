@@ -102,7 +102,7 @@ function Home(props) {
             <MDBCardImage className="img-fluid" src={array.thumbnailUrl}
             waves onClick={handleDetail} id={array.id} fullUrl={array.url}/>
             <MDBCardBody title={array.title} thumbnailUrl={array.thumbnailUrl} fullUrl={array.url}>
-                <MDBCardTitle>{array.title}</MDBCardTitle>                    
+                <MDBCardTitle className={styles.title}>{array.title}</MDBCardTitle>                    
                 <MDBBtn onClick={handleFavourite} >Favourite</MDBBtn>
             </MDBCardBody>
         </MDBCard>    
@@ -112,7 +112,7 @@ function Home(props) {
             <MDBCardImage className={`img-fluid ${styles.objekfit}`} src={array.thumbnailUrl}
             waves onClick={handleDetail} id={array.id} fullUrl={array.url}/>
             <MDBCardBody id={array.id} title={array.title} thumbnailUrl={array.thumbnailUrl} fullUrl={array.url}>
-                <MDBCardTitle >{array.title}</MDBCardTitle>                    
+                <MDBCardTitle className={styles.title}>{array.title}</MDBCardTitle>                    
                 <MDBBtn onClick={handleFavourite} >Favourite</MDBBtn>
             </MDBCardBody>
         </MDBCard>    
@@ -120,7 +120,7 @@ function Home(props) {
     
     return(
         <div className={styles.area}>
-            <h1 className={styles.title}>                
+            <h1 className={styles.titlereal}>                
                 Welcome In Photo Gallery
             </h1>            
             <div className={styles.center}>

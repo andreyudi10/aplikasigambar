@@ -36,7 +36,7 @@ const Favourite = () => {
             <MDBCardImage className="img-fluid" src={array.thumbnail}
             waves onClick={handleDetail} id={array.id} fullUrl={array.url}/>
             <MDBCardBody title={array.title} thumbnailUrl={array.thumbnail} fullUrl={array.url}>
-                <MDBCardTitle>{array.title}</MDBCardTitle>                    
+                <MDBCardTitle className={styles.title}>{array.title}</MDBCardTitle>                    
                 <MDBBtn onClick={handleUnFavourite} id={array.id}>Unfavourit</MDBBtn>
             </MDBCardBody>
         </MDBCard>    
