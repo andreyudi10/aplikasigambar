@@ -42,6 +42,7 @@ function Home(props) {
                     title:title,
                     thumbnail:thumbnail,
                     url:url,
+                    star:true
                     }
             ]                                         
             setFavourite(objekFavourite)

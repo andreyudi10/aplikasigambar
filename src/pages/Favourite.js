@@ -9,7 +9,7 @@ const Favourite = () => {
     const [favourite,setFavourite] = useState()
     const [filtered, setFiltered] = useState()
     useEffect(() => {
-        localStorage.getItem("data")
+        // localStorage.getItem("data")
         console.log(JSON.parse(localStorage.getItem("favourite")))
         setFavourite(JSON.parse(localStorage.getItem("favourite")))
 
@@ -25,9 +25,11 @@ const Favourite = () => {
     }
 
     
-    // function handleUnFavourite(id) {
-    //     setFiltered(favourite.filter((array)=>array.id=="25"))        
-    // }
+    const handleUnFavourite = (e) =>{
+        console.log(e.target.getAttribute('id'))
+        const id = e.target.getAttribute('id')
+        favourite.filter((aray)=>aray.id===id)        
+    }
 
     const favouriteBody = favourite && favourite.map((array,index)=>(                
         <MDBCard className={styles.card}>
@@ -35,7 +37,7 @@ const Favourite = () => {
             waves onClick={handleDetail} id={array.id} fullUrl={array.url}/>
             <MDBCardBody title={array.title} thumbnailUrl={array.thumbnail} fullUrl={array.url}>
                 <MDBCardTitle>{array.title}</MDBCardTitle>                    
-                {/* <MDBBtn onClick={handleUnFavourite(array.id)} >Unfavourit</MDBBtn> */}
+                <MDBBtn onClick={handleUnFavourite} id={array.id}>Unfavourit</MDBBtn>
             </MDBCardBody>
         </MDBCard>    
     ))
