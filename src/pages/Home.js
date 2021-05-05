@@ -112,7 +112,7 @@ function Home(props) {
             <MDBCardImage className={`img-fluid ${styles.objekfit}`} src={array.thumbnailUrl}
             waves onClick={handleDetail} id={array.id} fullUrl={array.url}/>
             <MDBCardBody id={array.id} title={array.title} thumbnailUrl={array.thumbnailUrl} fullUrl={array.url}>
-                <MDBCardTitle className={styles.teksWidth}>{array.title}</MDBCardTitle>                    
+                <MDBCardTitle >{array.title}</MDBCardTitle>                    
                 <MDBBtn onClick={handleFavourite} >Favourite</MDBBtn>
             </MDBCardBody>
         </MDBCard>    
