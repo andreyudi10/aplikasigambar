@@ -5,7 +5,11 @@
 
 .button{
     display: inline-block;
-    margin-left: 5px;
+    margin-left: 20px;
+    align-items: center;
+}
+h1{
+    margin-right: 20px;
 }
 
 .center{
@@ -23,8 +27,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 95%;
 }
-
 
 img{    
     display: block;

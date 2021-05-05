@@ -71,7 +71,7 @@ function DetailBank(props) {
             </h1>
             <Link to="/">
                 <MDBBtn className={styles.backButton}>
-                    back
+                    Home
                 </MDBBtn>                
             </Link>
             {/* <p></p>                             */}
