@@ -1,0 +1,1010 @@
+{"data":[
+    {
+      "accountNumber": 3492948603,
+      "currency": "Rupiah",
+      "balance": 2000000,
+      "lastTransactionDate": "14 Februari 2021",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 3588483321,
+      "currency": "Dollar",
+      "balance": 8000000,
+      "lastTransactionDate": "14 Februari 2021",
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 5877153567,
+      "currency": "Ringgit",
+      "balance": 7000000,
+      "lastTransactionDate": "14 Februari 2021",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 2429139721,
+      "currency": "Rupiah",
+      "balance": 8000000,
+      "lastTransactionDate": "14 Februari 2021",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 4940098181,
+      "currency": "Dollar",
+      "balance": 16000000,
+      "lastTransactionDate": "14 Februari 2021",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 3301814721,
+      "currency": "Ringgit",
+      "balance": 7000000,
+      "lastTransactionDate": "14 Februari 2021",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 7954086964,
+      "currency": "Rupiah",
+      "balance": 4000000,
+      "lastTransactionDate": "14 Februari 2021",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 7210179117,
+      "currency": "Dollar",
+      "balance": 7000000,
+      "lastTransactionDate": "14 Februari 2021",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 3625621262,
+      "currency": "Rupiah",
+      "balance": 19000000,
+      "lastTransactionDate": "14 Februari 2021",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 3278020597,
+      "currency": "Dollar",
+      "balance": 7000000,
+      "lastTransactionDate": "14 Februari 2021",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 4817639082,
+      "currency": "Ringgit",
+      "balance": 4000000,
+      "lastTransactionDate": "14 Februari 2021",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 6506998259,
+      "currency": "Rupiah",
+      "balance": 19000000,
+      "lastTransactionDate": "14 Februari 2021",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 6412780713,
+      "currency": "Dollar",
+      "balance": 14000000,
+      "lastTransactionDate": "14 Februari 2021",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    },
+    {
+      "accountNumber": 5301752360,
+      "currency": "Dollar",
+      "balance": 12000000,
+      "lastTransactionDate": "14 Februari 2022",      
+      "details": [
+        {
+          "value": 1100000,
+          "date": "15 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "gajian"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "sampingan"
+        },
+        {
+          "value": 1300000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli charger tokopedia"
+        },
+        {
+          "value": 1700000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "hasil jual akun"
+        },
+        {
+          "value": 1100000,
+          "date": "19 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "debit",
+          "credit": "-",
+          "transactionnarative": "uang jajan"
+        },
+        {
+          "value": 1700000,
+          "date": "20 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        },
+        {
+          "value": 1100000,
+          "date": "21 Februari 2021",
+          "currency": "ikut awal",
+          "debit": "-",
+          "credit": "credit",
+          "transactionnarative": "beli skin"
+        }
+      ]
+    }
+  ]}

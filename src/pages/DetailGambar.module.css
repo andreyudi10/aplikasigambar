@@ -1,0 +1,28 @@
+.backButton{
+    display:block;
+    float:right;        
+    margin: 0 auto 5px 0;
+    padding: 12px;
+
+}
+
+img{
+    display: block;
+}
+
+.input{
+    display:inline-block;
+    float:right;
+    margin-top: 10px;
+    padding: 3px;
+}
+.title{        
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.area{
+    margin:0 auto;
+    width: 60%;
+}

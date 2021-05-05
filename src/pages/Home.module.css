@@ -1,0 +1,45 @@
+.title{
+    margin:0 auto;    
+    text-align: center;
+}
+
+.button{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{    
+    min-width: fit-content;    
+    margin:10px        
+}
+
+.imageContainer{
+    display: flex;        
+    justify-content: center;
+    align-items: center;
+}
+
+img{    
+    display: block;
+    padding: 0px;    
+}
+
+img:hover{
+    opacity: 60%;
+}
+
+.area{    
+    width: 95%;
+    margin: 0 auto
+}
+
+.input{
+    display: inline-block;        
+    padding: 10px;    
+    margin:1px 1px 5px 10px;
+}
