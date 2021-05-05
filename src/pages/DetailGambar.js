@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 import styles from './DetailGambar.module.css'
 
-function DetailBank(props) {    
+function DetailGambar(props) {    
     const {id} = useParams()
     const [imageData, setImageData] = useState()
     const [filteredData,setFilteredData] = useState()
@@ -81,5 +81,4 @@ function DetailBank(props) {
     )
 }
 
-export default DetailBank;
-
+export default DetailGambar;
