@@ -66,15 +66,16 @@ function DetailBank(props) {
     const show = filteredData && <img src={filteredData[0].url}></img>
     return(
         <div className={styles.area}>
-            <h1 className={styles.title}>
-                Detail Gambar                            
-            </h1>
-            <Link to="/">
-                <MDBBtn className={styles.backButton}>
-                    Home
-                </MDBBtn>                
-            </Link>
-            {/* <p></p>                             */}
+            <div>
+                <h1 className={styles.title}>
+                    Detail Gambar                            
+                </h1>
+                <Link to="/">
+                    <MDBBtn className={styles.backButton}>
+                        Home
+                    </MDBBtn>                
+                </Link>
+            </div>            
             {show}            
         </div>
     )
