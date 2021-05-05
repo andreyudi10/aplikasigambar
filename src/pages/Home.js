@@ -47,7 +47,8 @@ function Home(props) {
             ]                                         
             setFavourite(objekFavourite)
             // localStorage.setItem("favourite",JSON.stringify(favourite))
-        }else{
+        }
+        if(favourite===[]){
             const firstFavourite = [
                 {
                     id:id,
