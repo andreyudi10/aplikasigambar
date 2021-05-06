@@ -27,6 +27,12 @@ function Home(props) {
         localStorage.setItem("favourite",JSON.stringify(favourite))
     }
 
+    function isNotDuplicate(w){
+        const isDuplicate = new Set(w).size !== w.length
+        const isNotDuplicate = !isDuplicate        
+        return isNotDuplicate    
+    }
+
     const  handleFavourite = (e)=>{
         console.log(e.target.parentNode)
         const id = e.target.parentNode.getAttribute('id').toString()
@@ -44,8 +50,12 @@ function Home(props) {
                     url:url,
                     star:true
                     }
-            ]                                         
-            setFavourite(objekFavourite)
+            ]                      
+            const arrayObjekFavourite = objekFavourite.map((value)=>value.id)
+            if(isNotDuplicate(arrayObjekFavourite)){
+                
+                setFavourite(objekFavourite)
+            }                   
             // localStorage.setItem("favourite",JSON.stringify(favourite))
         }
        if(favourite===[]) {
@@ -56,8 +66,9 @@ function Home(props) {
                     thumbnail:thumbnail,
                     url:url,
                 }
-            ]
-            setFavourite(firstFavourite)
+            ]                        
+                setFavourite(firstFavourite)
+            
             // localStorage.setItem("favourite",JSON.stringify(favourite))
         }
                         
