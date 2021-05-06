@@ -40,7 +40,7 @@ img:hover{
 }
 
 .area{    
-    width: 95%;
+    width: 90%;
     margin: 0 auto
 }
 
@@ -58,3 +58,7 @@ img:hover{
     width: 200px;
 }
 
+.debounce{
+    height: 50px;
+    margin:10px;
+}

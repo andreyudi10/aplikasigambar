@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useHistory} from 'react-router-dom'
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCol } from 'mdb-react-ui-kit';
 import {Link} from 'react-router-dom'
+import {DebounceInput} from 'react-debounce-input';
 import styles from './Home.module.css'
 function Home(props) {    
     let history = useHistory()    
@@ -10,6 +11,7 @@ function Home(props) {
     const [search, setSearch] = useState('')
     const [filteredData, setFilteredData]=useState()
     const [favourite,setFavourite]=useState([])
+    const [value, setValue] = useState("")
     const handleClick = (e) =>(           
         history.push(`./${e.target.parentNode.getAttribute('id')}`)        
     )
@@ -22,10 +24,7 @@ function Home(props) {
         history.push(`./details/${e.target.getAttribute('id')}`)        
         // setDetail()
     }
-
-    const handleSaveStorage = () =>{
-        localStorage.setItem("favourite",JSON.stringify(favourite))
-    }
+    
 
     function isNotDuplicate(w){
         const isDuplicate = new Set(w).size !== w.length
@@ -35,7 +34,7 @@ function Home(props) {
 
     const  handleFavourite = (e)=>{
         console.log(e.target.parentNode)
-        const id = e.target.parentNode.getAttribute('id').toString()
+        const id = e.target.parentNode.getAttribute('id')
         const title = e.target.parentNode.getAttribute('title')
         const thumbnail = e.target.parentNode.getAttribute('thumbnailUrl')
         const url = e.target.parentNode.getAttribute('fullUrl')
@@ -55,6 +54,7 @@ function Home(props) {
             if(isNotDuplicate(arrayObjekFavourite)){
                 
                 setFavourite(objekFavourite)
+                localStorage.setItem("favourite",JSON.stringify(objekFavourite))
             }                   
             // localStorage.setItem("favourite",JSON.stringify(favourite))
         }
@@ -68,6 +68,7 @@ function Home(props) {
                 }
             ]                        
                 setFavourite(firstFavourite)
+                localStorage.setItem("favourite",JSON.stringify(firstFavourite))
             
             // localStorage.setItem("favourite",JSON.stringify(favourite))
         }
@@ -99,12 +100,12 @@ function Home(props) {
     useEffect(()=>{     
         if(imageData) {
             const results = imageData.filter(data =>
-                data.title.toLowerCase().indexOf(search.toLowerCase()) > -1             
+                data.title.toLowerCase().indexOf(value.toLowerCase()) > -1             
               );
               setFilteredData(results);
         }
     }        
-    ,[search])
+    ,[value])
 
 
     const cardBody = filteredData ?    
@@ -135,14 +136,21 @@ function Home(props) {
                 Welcome In Photo Gallery
             </h1>            
             <div className={styles.center}>
-                <input  type="text" 
+                {/* <input  type="text" 
                         value={search} 
                         onChange={handleChange} 
                         placeholder="Search by title"
                         className={styles.input}>                
-                </input>         
+                </input>          */}
+                <DebounceInput
+                    minLength={2}
+                    debounceTimeout={500}
+                    onChange={event => setValue(event.target.value)} 
+                    className={styles.debounce}
+                    placeholder="Search by title"
+                    />                
                 <Link to="/favourite">
-                    <MDBBtn className={styles.button} onClick={handleSaveStorage}>Favourite Page</MDBBtn>                   
+                    <MDBBtn className={styles.button} >Favourite Page</MDBBtn>                   
                 </Link>
             </div>
             <MDBCol className={styles.imageContainer} >

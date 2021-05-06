@@ -30,13 +30,13 @@ const Favourite = () => {
         const id = e.target.getAttribute('id')
         const result = favourite.filter((aray)=>aray.id!==id)        
         setFavourite(result)
+        localStorage.setItem("favourite",JSON.stringify(result))        
+
+    }
+
+    // const handleSaveStorage = () =>{
         
-
-    }
-
-    const handleSaveStorage = () =>{
-        localStorage.setItem("favourite",JSON.stringify(favourite))
-    }
+    // }
 
     const favouriteBody = favourite && favourite.filter((array)=>array.star===true).map((array,index)=>(                
         <MDBCard className={styles.card}>
@@ -54,7 +54,7 @@ const Favourite = () => {
             <div className={styles.center}>
                 <h1>Favourite</h1>
                 <Link to="/">
-                    <MDBBtn className={styles.backButton} onClick={handleSaveStorage}>
+                    <MDBBtn className={styles.backButton} >
                         Home
                     </MDBBtn>                
                 </Link>
