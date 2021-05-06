@@ -58,11 +58,7 @@ function Home(props) {
             }                   
             // localStorage.setItem("favourite",JSON.stringify(favourite))
         }
-<<<<<<< HEAD
         if(favourite===[]){
-=======
-       if(favourite===[]) {
->>>>>>> 90152a0130b9f18ccf4cfb43fc8a08a7337fc72f
             const firstFavourite = [
                 {
                     id:id,
