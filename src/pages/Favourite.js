@@ -7,7 +7,7 @@ import styles from './Favourite.module.css'
 const Favourite = () => {
     let history = useHistory()        
     const [favourite,setFavourite] = useState()
-    const [filtered, setFiltered] = useState()
+    
     useEffect(() => {
         // localStorage.getItem("data")
         console.log(JSON.parse(localStorage.getItem("favourite")))
@@ -28,15 +28,22 @@ const Favourite = () => {
     const handleUnFavourite = (e) =>{
         console.log(e.target.getAttribute('id'))
         const id = e.target.getAttribute('id')
-        favourite.filter((aray)=>aray.id===id)        
+        const result = favourite.filter((aray)=>aray.id!==id)        
+        setFavourite(result)
+        localStorage.setItem("favourite",JSON.stringify(result))        
+
     }
 
-    const favouriteBody = favourite && favourite.map((array,index)=>(                
+    // const handleSaveStorage = () =>{
+        
+    // }
+
+    const favouriteBody = favourite && favourite.filter((array)=>array.star===true).map((array,index)=>(                
         <MDBCard className={styles.card}>
             <MDBCardImage className="img-fluid" src={array.thumbnail}
             waves onClick={handleDetail} id={array.id} fullUrl={array.url}/>
             <MDBCardBody title={array.title} thumbnailUrl={array.thumbnail} fullUrl={array.url}>
-                <MDBCardTitle>{array.title}</MDBCardTitle>                    
+                <MDBCardTitle className={styles.title}>{array.title}</MDBCardTitle>                    
                 <MDBBtn onClick={handleUnFavourite} id={array.id}>Unfavourit</MDBBtn>
             </MDBCardBody>
         </MDBCard>    
@@ -47,7 +54,7 @@ const Favourite = () => {
             <div className={styles.center}>
                 <h1>Favourite</h1>
                 <Link to="/">
-                    <MDBBtn className={styles.backButton}>
+                    <MDBBtn className={styles.backButton} >
                         Home
                     </MDBBtn>                
                 </Link>
