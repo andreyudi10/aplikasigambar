@@ -61,13 +61,11 @@ function Home(props) {
     },[imageData])
     
     // manipulasi imageData pake search sehingga menjadi filteredData
-    useEffect(()=>{     
-        if(mappedData) {
-            const results = mappedData && mappedData.filter((data) =>(
-                data.title.toLowerCase().indexOf(valueDebounce.toLowerCase()) > -1             
-                ));
-                setFilteredData(results)                            
-            }        
+    useEffect(()=>{             
+        const results = mappedData && mappedData.filter((data) =>(
+            data.title.toLowerCase().indexOf(valueDebounce.toLowerCase()) > -1             
+            ));
+            setFilteredData(results)                                    
         }        
     ,[valueDebounce])
         
@@ -91,7 +89,11 @@ function Home(props) {
         const newMappedData = mappedData.map((data)=>data.id==id ? changedMapData(data) : data)
         setMappedData(newMappedData)        
         localStorage.setItem("copyData",JSON.stringify(newMappedData))
-        }    
+    }    
+
+    const handleChangeDebounce = (e) =>{        
+        setValueDebounce(e.target.value)
+    }
 
     const cardBody = filteredData ?    
     filteredData && filteredData.map((array,index)=>(                
@@ -113,25 +115,18 @@ function Home(props) {
                 <MDBBtn onClick={handleFavourite} id={array.id} className={styles.button}>Favourite</MDBBtn>
             </MDBCardBody>
         </MDBCard>    
-    ))
+    ))    
 
-    const handleChangeDebounce = (e) =>{
-        console.log(e.target.value)
-        setValueDebounce(e.target.value)
-    }
+    const h1StyleConditional = (
+        `${styles.titlereal} ${true?styles.titlereal2:styles.titlereal}`
+    )
     
     return(
         <div className={styles.area}>
-            <h1 className={`${styles.titlereal} ${true?styles.titlereal2:styles.titlereal}`}>                
+            <h1 className={h1StyleConditional}>                
                 Welcome In Photo Gallery
             </h1>            
-            <div className={styles.center}>
-                {/* <input  type="text" 
-                        value={search} 
-                        onChange={handleChange} 
-                        placeholder="Search by title"
-                        className={styles.input}>                
-                </input>          */}
+            <div className={styles.center}>                
                 <DebounceInput
                     minLength={2}
                     debounceTimeout={500}
