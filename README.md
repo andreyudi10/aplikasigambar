@@ -1,9 +1,7 @@
-# Informasi Penting
-yang dikumpul jam 4 sore di jam ujian adalah
-https://github.com/andreyudi10/aplikasigambar/commit/6a38597bc5fb4bd7708d82cb9e3be84769519e65
+# Getting Started with Create React App
 
-jika ingin lihat versi yang lebih final ketimbang yang di branch "main", bisa lihat di branch "final". 
-selain itu semua file di kumpul sebelum jam 4 sore, hanya  mengedit home.js branch "main" hanya 1 line agar fungsi favourit bisa jalan (bug fixes).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+dan jika ingin lihat versi yang lebih final ketimbang yang di branch "main", bisa lihat di branch "final". selain itu semua file di kumpul sebelum jam 4 sore, hanya  mengedit home.js branch "main" hanya 1 line agar fungsi favourit bisa jalan (bug fixes).
 
 ## Available Scripts
 
