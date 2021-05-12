@@ -1,6 +1,7 @@
 .title{
-    margin:0 auto;    
-    text-align: center;
+    margin:0 auto;        
+    height: 120px;
+    text-align:left;
 }
 
 .button{
@@ -18,14 +19,14 @@ h1{
     justify-content: center;
 }
 .card{    
-    min-width: fit-content;    
+    width: 200px;
     margin:10px        
 }
 
 .imageContainer{
     display: flex;        
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     flex-wrap: wrap;
     width: 95%;
 }
@@ -40,7 +41,7 @@ img:hover{
 }
 
 .area{    
-    width: 95%;
+    width: 90%;
     margin: 0 auto
 }
 
