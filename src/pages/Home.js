@@ -11,128 +11,122 @@ function Home(props) {
     const [search, setSearch] = useState('')
     const [filteredData, setFilteredData]=useState()
     const [favourite,setFavourite]=useState([])
-    const [value, setValue] = useState("")
-    const handleClick = (e) =>(           
-        history.push(`./${e.target.parentNode.getAttribute('id')}`)        
-    )
-    const handleChange = (e) => {        
-        setSearch(e.target.value)
-    }    
-
+    const [valueDebounce, setValueDebounce] = useState("")
+    const [ mappedData, setMappedData] = useState()
+        
+    
+    // ambil data entah dari api ato local storage
+    useEffect(()=>{        
+        const getStorageData = JSON.parse(localStorage.getItem("copyData"))
+        if(getStorageData){
+            setImageData(getStorageData)   
+        }else{
+            const getImage = async () => {            
+                const res = await axios.get(                
+                    `https://jsonplaceholder.typicode.com/albums/1/photos`
+                  );
+                  const result = await res.data;
+                  console.log(result);              
+                  setImageData(result);                          
+                }
+                getImage()        
+            }
+        },[])
+    
+        // taro imageData di mappedData ini yang di map
+    useEffect(()=>{     
+        const getStorageData = JSON.parse(localStorage.getItem("copyData"))           
+        if(imageData && getStorageData){
+            const newData = (data)=>({
+                albumId:data.albumId,
+                id:data.id,
+                thumbnailUrl:data.thumbnailUrl,
+                title:data.title,
+                url:data.url,
+                isFavorite:data.isFavorite,    
+                })
+            const addKeyFavourite = imageData && imageData.map(data=>newData(data))            
+            setMappedData(addKeyFavourite)         
+            localStorage.setItem("copyData",JSON.stringify(addKeyFavourite))               
+        }else if(imageData){
+        const newData = (data)=>({
+                albumId:data.albumId,
+                id:data.id,
+                thumbnailUrl:data.thumbnailUrl,
+                title:data.title,
+                url:data.url,
+                isFavorite:false,    
+            })
+            const addKeyFavourite = imageData && imageData.map(data=>newData(data))            
+            setMappedData(addKeyFavourite)         
+            localStorage.setItem("copyData",JSON.stringify(addKeyFavourite))                           
+        }                 
+    },[imageData])
+    
+    // manipulasi imageData pake search sehingga menjadi filteredData
+    useEffect(()=>{     
+        if(mappedData) {
+            const results = mappedData && mappedData.filter((data) =>(
+                data.title.toLowerCase().indexOf(valueDebounce.toLowerCase()) > -1             
+                ));
+                setFilteredData(results)                            
+            }        
+        }        
+    ,[valueDebounce])
+        
+        
     const handleDetail = (e) => {
         console.log(e.target.getAttribute('fullUrl'))
         history.push(`./details/${e.target.getAttribute('id')}`)        
         // setDetail()
-    }
+    }    
     
-
-    function isNotDuplicate(w){
-        const isDuplicate = new Set(w).size !== w.length
-        const isNotDuplicate = !isDuplicate        
-        return isNotDuplicate    
-    }
-
-    const  handleFavourite = (e)=>{
-        console.log(e.target.parentNode)
-        const id = e.target.parentNode.getAttribute('id')
-        const title = e.target.parentNode.getAttribute('title')
-        const thumbnail = e.target.parentNode.getAttribute('thumbnailUrl')
-        const url = e.target.parentNode.getAttribute('fullUrl')
-
-        // ...JSON.parse(localStorage.getItem("favourite"))
-        if(favourite!==[]){            
-            const objekFavourite = [
-                    ...favourite,{
-                    id:id,
-                    title:title,
-                    thumbnail:thumbnail,
-                    url:url,
-                    star:true
-                    }
-            ]                      
-            const arrayObjekFavourite = objekFavourite.map((value)=>value.id)
-            if(isNotDuplicate(arrayObjekFavourite)){
-                
-                setFavourite(objekFavourite)
-                localStorage.setItem("favourite",JSON.stringify(objekFavourite))
-            }                   
-            // localStorage.setItem("favourite",JSON.stringify(favourite))
-        }
-       if(favourite===[]) {
-            const firstFavourite = [
-                {
-                    id:id,
-                    title:title,
-                    thumbnail:thumbnail,
-                    url:url,
-                }
-            ]                        
-                setFavourite(firstFavourite)
-                localStorage.setItem("favourite",JSON.stringify(firstFavourite))
-            
-            // localStorage.setItem("favourite",JSON.stringify(favourite))
-        }
-                        
-        // localStorage.setItem("favourite",JSON.stringify(favourite))
-    }
-    console.log(favourite)
-    
-
-    useEffect(()=>{
-        const getImage = async () => {            
-              const res = await axios.get(                
-                `https://jsonplaceholder.typicode.com/albums/1/photos`
-              );
-              const result = await res.data;
-            //   console.log(result);              
-              setImageData(result);            
-        }
-        getImage()
-        console.log(imageData)
-        
-        if(JSON.parse(localStorage.getItem("favourite"))){
-            // console.log()
-            setFavourite(JSON.parse(localStorage.getItem("favourite")))
-        }
-    }
-    ,[])
-
-    useEffect(()=>{     
-        if(imageData) {
-            const results = imageData.filter(data =>
-                data.title.toLowerCase().indexOf(value.toLowerCase()) > -1             
-              );
-              setFilteredData(results);
-        }
-    }        
-    ,[value])
-
+    const  handleFavourite = (e)=>{                
+        const id = e.target.id
+        const changedMapData =(data) =>({
+            albumId:data.albumId,
+            id:data.id,
+            thumbnailUrl:data.thumbnailUrl,
+            title:data.title,
+            url:data.url,
+            isFavorite:true,  
+        })
+        const newMappedDta = mappedData.map((data)=>data.id==id ? changedMapData(data) : data)
+        setMappedData(newMappedDta)
+        console.log(newMappedDta)
+        localStorage.setItem("copyData",JSON.stringify(newMappedDta))
+        }    
 
     const cardBody = filteredData ?    
     filteredData && filteredData.map((array,index)=>(                
         <MDBCard className={styles.card}>
-            <MDBCardImage className="img-fluid" src={array.thumbnailUrl}
-            waves onClick={handleDetail} id={array.id} fullUrl={array.url}/>
-            <MDBCardBody title={array.title} thumbnailUrl={array.thumbnailUrl} fullUrl={array.url}>
+        <MDBCardImage className="img-fluid" src={array.thumbnailUrl}
+        waves onClick={handleDetail} id={array.id} fullUrl={array.url}/>
+        <MDBCardBody title={array.title} thumbnailUrl={array.thumbnailUrl} fullUrl={array.url}>
                 <MDBCardTitle className={styles.title}>{array.title}</MDBCardTitle>                    
-                <MDBBtn onClick={handleFavourite} >Favourite</MDBBtn>
-            </MDBCardBody>
+                <MDBBtn onClick={handleFavourite} id={array.id} className={styles.button}>Favourite</MDBBtn>
+        </MDBCardBody>
         </MDBCard>    
     )):
-    imageData && imageData.map((array,index)=>(                
+    mappedData && mappedData.map((array,index)=>(                
         <MDBCard className={styles.card}>
             <MDBCardImage className={`img-fluid ${styles.objekfit}`} src={array.thumbnailUrl}
             waves onClick={handleDetail} id={array.id} fullUrl={array.url}/>
             <MDBCardBody id={array.id} title={array.title} thumbnailUrl={array.thumbnailUrl} fullUrl={array.url}>
                 <MDBCardTitle className={styles.title}>{array.title}</MDBCardTitle>                    
-                <MDBBtn onClick={handleFavourite} >Favourite</MDBBtn>
+                <MDBBtn onClick={handleFavourite} id={array.id} className={styles.button}>Favourite</MDBBtn>
             </MDBCardBody>
         </MDBCard>    
     ))
+
+    const handleChangeDebounce = (e) =>{
+        console.log(e.target.value)
+        setValueDebounce(e.target.value)
+    }
     
     return(
         <div className={styles.area}>
-            <h1 className={styles.titlereal}>                
+            <h1 className={`${styles.titlereal} ${true?styles.titlereal2:styles.titlereal}`}>                
                 Welcome In Photo Gallery
             </h1>            
             <div className={styles.center}>
@@ -145,7 +139,7 @@ function Home(props) {
                 <DebounceInput
                     minLength={2}
                     debounceTimeout={500}
-                    onChange={event => setValue(event.target.value)} 
+                    onChange={handleChangeDebounce}
                     className={styles.debounce}
                     placeholder="Search by title"
                     />                
