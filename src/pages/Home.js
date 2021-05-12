@@ -7,14 +7,11 @@ import {DebounceInput} from 'react-debounce-input';
 import styles from './Home.module.css'
 function Home(props) {    
     let history = useHistory()    
-    const [imageData,setImageData] = useState()
-    const [search, setSearch] = useState('')
-    const [filteredData, setFilteredData]=useState()
-    const [favourite,setFavourite]=useState([])
+    const [imageData,setImageData] = useState()    
+    const [mappedData,setMappedData] = useState()
+    const [filteredData, setFilteredData]=useState()    
     const [valueDebounce, setValueDebounce] = useState("")
-    const [ mappedData, setMappedData] = useState()
-        
-    
+            
     // ambil data entah dari api ato local storage
     useEffect(()=>{        
         const getStorageData = JSON.parse(localStorage.getItem("copyData"))
@@ -33,7 +30,7 @@ function Home(props) {
             }
         },[])
     
-        // taro imageData di mappedData ini yang di map
+    // taro imageData di mappedData ini yang di map dan juga menambahkan key isFavorite
     useEffect(()=>{     
         const getStorageData = JSON.parse(localStorage.getItem("copyData"))           
         if(imageData && getStorageData){
@@ -91,21 +88,20 @@ function Home(props) {
             url:data.url,
             isFavorite:true,  
         })
-        const newMappedDta = mappedData.map((data)=>data.id==id ? changedMapData(data) : data)
-        setMappedData(newMappedDta)
-        console.log(newMappedDta)
-        localStorage.setItem("copyData",JSON.stringify(newMappedDta))
+        const newMappedData = mappedData.map((data)=>data.id==id ? changedMapData(data) : data)
+        setMappedData(newMappedData)        
+        localStorage.setItem("copyData",JSON.stringify(newMappedData))
         }    
 
     const cardBody = filteredData ?    
     filteredData && filteredData.map((array,index)=>(                
         <MDBCard className={styles.card}>
-        <MDBCardImage className="img-fluid" src={array.thumbnailUrl}
-        waves onClick={handleDetail} id={array.id} fullUrl={array.url}/>
-        <MDBCardBody title={array.title} thumbnailUrl={array.thumbnailUrl} fullUrl={array.url}>
+            <MDBCardImage className="img-fluid" src={array.thumbnailUrl}
+            waves onClick={handleDetail} id={array.id} fullUrl={array.url}/>
+            <MDBCardBody title={array.title} thumbnailUrl={array.thumbnailUrl} fullUrl={array.url}>
                 <MDBCardTitle className={styles.title}>{array.title}</MDBCardTitle>                    
                 <MDBBtn onClick={handleFavourite} id={array.id} className={styles.button}>Favourite</MDBBtn>
-        </MDBCardBody>
+            </MDBCardBody>
         </MDBCard>    
     )):
     mappedData && mappedData.map((array,index)=>(                
