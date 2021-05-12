@@ -1,8 +1,13 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Informasi Penting
 dan jika ingin lihat versi yang lebih final ketimbang yang di branch "main", bisa lihat di branch "final". selain itu semua file di kumpul sebelum jam 4 sore, hanya  mengedit home.js branch "main" hanya 1 line agar fungsi favourit bisa jalan (bug fixes).
 
+# getting Started
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<<<<<<< HEAD
+=======
+dan jika ingin lihat versi yang lebih final ketimbang yang di branch "main", bisa lihat di branch "final". selain itu semua file di kumpul sebelum jam 4 sore, hanya  mengedit home.js branch "main" hanya 1 line agar fungsi favourit bisa jalan (bug fixes).
+
+>>>>>>> 90152a0130b9f18ccf4cfb43fc8a08a7337fc72f
 ## Available Scripts
 
 In the project directory, you can run:
