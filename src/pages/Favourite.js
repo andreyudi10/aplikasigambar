@@ -19,9 +19,8 @@ const Favourite = () => {
     // )
 
     const handleDetail = (e) => {
-        console.log(e.target.getAttribute('fullUrl'))
-        history.push(`./details/${e.target.getAttribute('id')}`)        
-        // setDetail()
+        const id = e.target.getAttribute('id')
+        history.push(`./details/${id}`)        
     }
 
     

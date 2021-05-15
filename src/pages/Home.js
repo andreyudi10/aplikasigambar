@@ -28,13 +28,12 @@ function Home(props) {
                 }
                 getImage()        
             }
-        },[])
-    
+        },[])    
     // taro imageData di mappedData ini yang di map dan juga menambahkan key isFavorite
     useEffect(()=>{     
         const getStorageData = JSON.parse(localStorage.getItem("copyData"))           
         if(imageData && getStorageData){
-            const newData = (data)=>({
+            const addedData = (data)=>({
                 albumId:data.albumId,
                 id:data.id,
                 thumbnailUrl:data.thumbnailUrl,
@@ -42,7 +41,8 @@ function Home(props) {
                 url:data.url,
                 isFavorite:data.isFavorite,    
                 })
-            const addKeyFavourite = imageData && imageData.map(data=>newData(data))            
+            const addKeyFavourite = imageData && imageData.map(data=>addedData(data))            
+            console.log('addKeyFavourite')
             setMappedData(addKeyFavourite)         
             localStorage.setItem("copyData",JSON.stringify(addKeyFavourite))               
         }else if(imageData){
@@ -63,10 +63,11 @@ function Home(props) {
     // manipulasi imageData pake search sehingga menjadi filteredData
     useEffect(()=>{     
         if(mappedData) {
-            const results = mappedData && mappedData.filter((data) =>(
-                data.title.toLowerCase().indexOf(valueDebounce.toLowerCase()) > -1             
-                ));
-                setFilteredData(results)                            
+            const results = mappedData && mappedData.filter((data) =>{
+                const searchValue = valueDebounce.toLowerCase()
+                return data.title.toLowerCase().indexOf(searchValue) > -1             
+            });
+            setFilteredData(results)                            
             }        
         }        
     ,[valueDebounce])
@@ -89,6 +90,8 @@ function Home(props) {
             isFavorite:true,  
         })
         const newMappedData = mappedData.map((data)=>data.id==id ? changedMapData(data) : data)
+        const savedFavorites = mappedData.filter((data)=>data.isFavorite==true)
+        console.log(savedFavorites)
         setMappedData(newMappedData)        
         localStorage.setItem("copyData",JSON.stringify(newMappedData))
         }    
@@ -126,12 +129,6 @@ function Home(props) {
                 Welcome In Photo Gallery
             </h1>            
             <div className={styles.center}>
-                {/* <input  type="text" 
-                        value={search} 
-                        onChange={handleChange} 
-                        placeholder="Search by title"
-                        className={styles.input}>                
-                </input>          */}
                 <DebounceInput
                     minLength={2}
                     debounceTimeout={500}

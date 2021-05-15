@@ -11,6 +11,9 @@ img{
 }
 
 .input{
+    position:relative;
+    top:10px;
+    left:10px;
     display:inline-block;
     float:right;
     margin-top: 10px;
